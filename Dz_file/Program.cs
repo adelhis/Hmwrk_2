@@ -41,7 +41,7 @@ namespace Domashka
             int pin = 0;
             bool ispin = int.TryParse(Console.ReadLine(), out pin);
             (string, string, int, int) tuple = ("", "", 0, 0);
-            if (ispin && isage && Regex.IsMatch(name, @"^[a-zA-Z]+$") && Regex.IsMatch(city, @"^[a-zA-Z]+$"))
+            if (ispin && isage && Regex.IsMatch(name, @"^[a-zA-Zа-яА-Я]+$") && Regex.IsMatch(city, @"^[a-zA-Zа-яА-Я]+$"))
             {
                 tuple.Item1 = name;
                 tuple.Item2 = city;
